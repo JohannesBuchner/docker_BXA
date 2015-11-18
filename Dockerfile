@@ -5,9 +5,9 @@ FROM ldouchy/docker_heasoft:latest
 
 MAINTAINER ldouchy
 
-# version 0.1 creation of the dockerfile
+# version 0.2 creation of the dockerfile
 
-LABEL version="0.1" description="BXA https://johannesbuchner.github.io/BXA"
+LABEL version="0.2" description="BXA https://johannesbuchner.github.io/BXA"
 
 ENV	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/MultiNest/lib \
 	MULTINEST=$MULTINEST:/opt/MultiNest \
@@ -38,4 +38,9 @@ RUN git clone https://github.com/JohannesBuchner/BXA.git && cd /opt/BXA && pytho
 
 
 # Simple test
+WORKDIR /opt/example
 
+COPY reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz /opt/example/
+RUN tar -xzvf reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz
+
+#CMD python example_simplest.py
