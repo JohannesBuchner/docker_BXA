@@ -25,7 +25,7 @@ Complete story:
 ## Run an interactive shell in a container:
 
   Short version:
-        docker run -t -i <container_ID> /bin/bash
+        docker run -t -i \<container_ID\> /bin/bash
 
         docker run -t -i ubuntu /bin/bash
 
