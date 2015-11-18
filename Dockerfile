@@ -1,7 +1,7 @@
 # BXA container 
 # https://johannesbuchner.github.io/BXA
 
-FROM ldouchy/heasoft:latest
+FROM ldouchy/docker_heasoft:latest
 
 MAINTAINER ldouchy
 
