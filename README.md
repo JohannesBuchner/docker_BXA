@@ -70,9 +70,7 @@ Links to the [official docker documentation](https://docs.docker.com/):
 ## Save your BXA instance:
 
 
-# HEASoft links
+# BXA links
 
 [official documentation page](https://johannesbuchner.github.io/BXA/)
-
-[General install guide](https://heasarc.gsfc.nasa.gov/docs/software/lheasoft/install.html)
 
