@@ -1,7 +1,7 @@
 # BXA container 
 # https://johannesbuchner.github.io/BXA
 
-FROM lovelace:5000/heasoft:latest
+FROM ldouchy/heasoft:latest
 
 MAINTAINER ldouchy
 
@@ -39,5 +39,3 @@ RUN git clone https://github.com/JohannesBuchner/BXA.git && cd /opt/BXA && pytho
 
 # Simple test
 
-# COPY simple_pymultinest/1d_multimodal.py /opt/custom/
-# WORKDIR /opt/custom
