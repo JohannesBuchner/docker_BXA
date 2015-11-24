@@ -6,12 +6,16 @@ If you find PyMultiNest enables your research, please consider citing this publi
 ## Default beaviour of the container:
 Launched without option this container run the example script and open the result image.
 
-
-On linux launch:
+On linux run:
 
 	$ docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY ldouchy/docker_bxa:latest
 
+Want to run the example yourself?
+On linux run:
 
+	$ docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY -ti ldouchy/docker_bxa:latest bash
+	# python example_simplest.py
+	# feh simplest-marg.png
 
 # Where to start
 
@@ -75,7 +79,6 @@ Links to the [official docker documentation](https://docs.docker.com/):
 ## Customize the Dockerfile to add your own code
 
 ## Save your BXA instance:
-
 
 # BXA links
 
