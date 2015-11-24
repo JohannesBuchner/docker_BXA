@@ -5,9 +5,7 @@ FROM ldouchy/docker_heasoft:latest
 
 MAINTAINER ldouchy
 
-# version 0.2 creation of the dockerfile
-
-LABEL version="0.2" description="BXA https://johannesbuchner.github.io/BXA"
+LABEL description="BXA https://johannesbuchner.github.io/BXA"
 
 ENV	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/MultiNest/lib \
 	MULTINEST=$MULTINEST:/opt/MultiNest \
@@ -28,7 +26,10 @@ RUN 	apt-get update && \
 	python-matplotlib \
 	python-numpy \
 	python-progressbar \
-	python-scipy
+	python-scipy \
+	python-pyfits \
+	feh \
+	&& rm -rf /var/lib/apt/lists/*
 
 # PyMultiNest install from sources
 RUN wget https://raw.githubusercontent.com/ldouchy/docker_PyMultiNest/master/installMultiNest.sh && /bin/bash /opt/installMultiNest.sh
@@ -41,6 +42,5 @@ RUN git clone https://github.com/JohannesBuchner/BXA.git && cd /opt/BXA && pytho
 WORKDIR /opt/example
 
 COPY reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz /opt/example/
-RUN tar -xzvf reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz
+RUN tar -xzvf reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz && rm reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz
 
-#CMD python example_simplest.py
