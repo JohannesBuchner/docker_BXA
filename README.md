@@ -4,7 +4,14 @@ If you find PyMultiNest enables your research, please consider citing this publi
 [Buchner et al. 2014, A&A](http://www.aanda.org/articles/aa/abs/2014/04/aa22971-13/aa22971-13.html)
 
 ## Default beaviour of the container:
-Launched without option this container run the command: none
+Launched without option this container run the example script and open the result image.
+
+
+On linux launch:
+
+	$ docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY ldouchy/docker_bxa:latest
+
+
 
 # Where to start
 
