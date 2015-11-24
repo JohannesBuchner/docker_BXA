@@ -37,10 +37,10 @@ RUN wget https://raw.githubusercontent.com/ldouchy/docker_PyMultiNest/master/ins
 # BXA install from sources
 RUN git clone https://github.com/JohannesBuchner/BXA.git && cd /opt/BXA && python setup.py install
 
-
 # Simple test
 WORKDIR /opt/example
 
 COPY reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz /opt/example/
 RUN tar -xzvf reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz && rm reputsimple_pymultinest1d_multimodal_pyinapublicgit.tar.gz
 
+CMD python example_simplest.py && feh simplest-marg.png
