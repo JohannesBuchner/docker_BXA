@@ -1,7 +1,22 @@
-# [BXA](https://johannesbuchner.github.io/BXA/) container:
+# [BXA](https://johannesbuchner.github.io/BXA/) docker image:
+
+## Acknowledgement
 
 If you find PyMultiNest enables your research, please consider citing this publication to give back for the time invested:
 [Buchner et al. 2014, A&A](http://www.aanda.org/articles/aa/abs/2014/04/aa22971-13/aa22971-13.html)
+
+If HEASoft has been useful in your research, please reference this website (http://heasarc.gsfc.nasa.gov/lheasoft/)
+```
+Blackburn, J. K. 1995, in ASP Conf. Ser., Vol. 77, Astronomical
+Data Analysis Software and Systems IV, ed. R. A. Shaw, H. E. Payne,
+and J. J. E. Hayes (San Francisco: ASP), 367.
+```
+
+XSPEC reference is:
+```
+Arnaud, K.A., 1996, Astronomical Data Analysis Software and Systems V,
+eds. Jacoby G. and Barnes J., p17, ASP Conf. Series volume 101.
+```
 
 ## Default beaviour of the container:
 Launched without option this container run the example script and open the result image.
